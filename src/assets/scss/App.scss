@@ -1,0 +1,43 @@
+@import "abstract/variables";
+@import 'bootstrap/scss/bootstrap.scss';
+@import "abstract/base";
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: auto; /* Enable scrolling for the entire modal */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 80vh; /* Set a maximum height for the content */
+    overflow-y: auto; /* Enable vertical scrolling for the content */
+}
+
+.modal-container {
+    width: 50%;
+}
+
+.modal-close {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #007bff;
+}
